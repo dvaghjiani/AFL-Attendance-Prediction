@@ -185,7 +185,9 @@ The final model achieved a cross-validated RMSE of 13.03.
 
 * * *
 
-## Summary
+### Summary
 
 This project involved 4 important stages: data collection, data cleaning/preparation, feature engineering and model building. The best-performing model turned out to be the LASSO regression, but most of the other models achieved a similar level of accuracy. Future work could look into using more features such as social media sentiment on the teams and match-day temperature. A few different machine learning ensemble techniques (e.g. boosting, bagging and stacking) could also be used in an attempt to improve the prediction accuracy.
+
+
 
