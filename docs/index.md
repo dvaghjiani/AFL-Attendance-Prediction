@@ -1,7 +1,7 @@
 It's no secret that Australians love their sport. If you go to any social gathering here, it's highly likely that you'll catch at least a snippet of a conversation about sport, whether it be cricket, tennis, soccer or some other sport. However nothing quite matches Australians' passion for Australian Rules Football. The AFL (Australian Football League) is the sport's highest-level league and regularly attracts match crowds in excess of 60,000 people.
 
 ![Image](/Mark.jpg)
--> A Collingwood player takes a spectacular mark in the 2018 Preliminary Final <-
+<p style="text-align: center;">A Collingwood player takes a spectacular mark in the 2018 Preliminary Final</p>
 
 
 Whilst watching a blockbuster match one day, I noticed that the attendance was significantly less than expected for such a highly-anticipated game. This got me thinking about all the possible factors that influence crowd sizes, from the ladder positions of the teams to the match-day weather conditions. Being the kind of guy who loves data-backed answers to questions, I decided to make a machine learning model for it using the Python programming language.
