@@ -1,4 +1,4 @@
-It's no secret that Australians love their sport. If you go to any social gathering here, it's highly likely that you'll catch at least a snippet of a conversation about sport, whether it be cricket, tennis, soccer or some other sport. However nothing quite matches Australians' passion for Australian Rules Football. The AFL (Australian Football League) is the sport's highest-level league and regularly attracts match crowds in excess of 60,000 people.
+It's no secret that Australians love their sport. If you go to any social gathering here, it's highly likely that you'll catch at least a snippet of a conversation about sport, whether it be cricket, tennis, soccer or some other sport. However nothing quite matches Australians' passion for _Australian Rules Football_. The AFL (Australian Football League) is the sport's highest-level league and regularly attracts match crowds in excess of 60,000 people.
 
 ![Image](/Mark.jpg)
 <p style="text-align: center;">A Collingwood player takes a spectacular mark in the 2018 Preliminary Final</p>
@@ -23,7 +23,7 @@ In this blog post, I present a non-technical discussion of my analysis and the m
 
 
 ![Image](/MCG crowd.jpg)
--> Almost 100,000 fans packed into the MCG for the 2012 AFL Grand Final <-
+<p style="text-align: center;">Almost 100,000 fans packed into the MCG for the 2012 AFL Grand Final</p>
 
 * * *
 
@@ -113,15 +113,15 @@ Most machine learning algorithms can't deal with categorical variables (stadium 
 After completing the feature engineering stage, I created some data visualisations to gain an understanding of how the predictor variables were associated with the response variable. See below for some of these plots.
 
 ![Image](/Stadiums.png)
-->Average attendance percentage for each stadium<-
+<p style="text-align: center;">Average attendance percentage for each stadium</p>
 
 
 ![Image](/Team Closeness.png)
-->Team closeness (i.e. difference in teams' ladder positions) plotted against average attendance percentage<-
+<p style="text-align: center;">Team closeness (i.e. difference in teams' ladder positions) plotted against average attendance percentage</p>
 
 
 ![Image](/Timeslot Attendances.png)
-->Average attendance percentage for each time-slot<-
+<p style="text-align: center;">Average attendance percentage for each time-slot</p>
 
 
 * * * 
@@ -137,7 +137,7 @@ The final step was to train a few different machine learning algorithms using my
 Linear regression is a simple algorithm that usually produces models that are more interpretable but less accurate than more advanced algorithms. The resulting coefficients of my linear regression model are shown below (note that the baseline factors for the _time-slot_ and _stadium_ dummy variables were Saturday night and the MCG, respectively).
 
 ![Image](/Linear Regression Coefficients.jpg)
-->Feature coefficients from the linear regression model<-
+<p style="text-align: center;">Feature coefficients from the linear regression model</p>
 
 
 The coefficient for a variable _x_ represents the estimated change in _percentage attendance_ that would occur if _x_ were to be increased by one unit (with all other variables held constant). For dummy variables, the coefficient represents the change that would occur if the match met that specific condition (e.g. played at Adelaide Oval) as opposed to the baseline factor.
@@ -146,7 +146,7 @@ The linear regression model achieved a cross-validated RMSE of 12.96. Below is a
 
 
 ![Image](/actual vs predicted.png)
--> The model's predictions plotted against the actual values <-
+<p style="text-align: center;">The model's predictions plotted against the actual values</p>
 
 
 **2. LASSO Regression**
@@ -164,7 +164,7 @@ Decision trees are models that work similarly to how humans would make predictio
 If you're curious to know, the _actual attendance_ of that game was 41,959.
 
 ![Image](/Regression Tree.png)
-->A simple decision tree for predicting percentage attendance at AFL games<-
+<p style="text-align: center;">A simple decision tree for predicting percentage attendance at AFL games</p>
 
 
 This tree could have been made more complex by adding more layers (and hence allowing for greater flexibility in predictions) however this leads to over-fitting. To overcome this limitation, I tried out a powerful algorithm called _random forest_ that creates many of these trees and takes the average of their individual predictions (there are a few tricks involved that make it such a powerful algorithm, but I won't go into those details here).
